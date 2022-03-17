@@ -7,6 +7,13 @@
     <script type="text/javascript" src="../jquery-3.0.0.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
+            // $("p[class]").css("border", "3px solid red");
+            // this filters only paragraphs with class attributes
+            // $("p[id=para1]").css("border", "3px solid red");
+            $("p[id^=para][lang*=en-]").css("border", "3px solid red");
+            // look for paragraph tags with the id tags, the '^' means it starts with the string of 'para'
+            // language atribute + '*=' contains the text 'en-'
+
         });
     </script>
 </head>
