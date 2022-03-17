@@ -7,6 +7,26 @@
     <script type="text/javascript" src="../jquery-3.0.0.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
+            // $("p:contains('3')").css("border", "3px solid red");
+            // selects paragraphs that contain '3' as a text string inside it
+            // $("p:parent").css("border", "3px solid red");
+            // either have another tag inside them or a text node. 
+            // paragraphs that at least have one child element will be selected by the parent filter
+            // $("div:has(p[class=a])").css("border", "3px solid red");
+            // this selects the divs tags that have an a class inside
+            // $("div p:first-child").css("border", "3px solid red");
+            // selects paragraph tags that are descendants of the div that are the first child of that element
+            // $("div p:last-of-type").css("border", "3px solid red");
+            // $("div p:nth-child(3)").css("border", "3px solid red");
+            //  asks for ps inside a div, that is the 3rd child of it's parent
+            // starts at 1-based index 
+            $("div p:nth-child(2n)").css("border", "3px solid red");
+            // loops over and selects every 2nd element
+
+
+
+
+            
         });
     </script>
 </head>
