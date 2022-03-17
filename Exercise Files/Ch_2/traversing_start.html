@@ -7,6 +7,26 @@
     <script type="text/javascript" src="../jquery-3.0.0.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
+            // $("#example").children().css("border", "3px solid red");
+            // var elem = $("#para1");
+            // elem.prev().css("border", "3px solid red");
+            // elem.next().css("border", "3px solid green");
+            // elem.parents().css("border", "3px solid blue");
+            // elem.parentsUntil($("body")).css("border", "3px solid blue");
+            // when it gets to the body tag, it will stop getting more parents. body itself not included
+            // $("#example").find("#para4").css("border", "3px solid red");
+            // it starts at example div, and searches the elements with the selector there
+            let leftmargin = 0;
+            let border = 3;
+            $("#example p").each(function(index, element) {
+                $(element).css("border", border + "px solid red")
+                .css("margin-left", leftmargin);
+                border += 2
+                leftmargin += 10
+            });
+
+
+
         });
     </script>
 </head>
